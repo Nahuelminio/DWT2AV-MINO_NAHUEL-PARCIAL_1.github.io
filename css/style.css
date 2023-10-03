@@ -1,0 +1,1013 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 580px) {
+  /*Header movile*/
+  header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+    opacity: 0.8;
+  }
+  .div-icon-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 2em;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .div-icon-list h2 {
+    color: #a7a7a7;
+    font-size: 1.4em;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  svg {
+    fill: #a7a7a7;
+    width: 1em;
+  }
+
+  ul li {
+    display: none;
+  }
+
+  /*Main movile*/
+  main {
+    background-color: #000000;
+  }
+  .banner {
+    width: 100%;
+  }
+  .section-resumen {
+    width: 20rem;
+    margin-top: 1em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-resumen h2 {
+    margin-bottom: 0.5em;
+    color: rgb(204, 173, 82);
+  }
+  .section-resumen p {
+    font-family: "Gabarito", cursive;
+    color: #a7a7a7;
+  }
+
+  h2 + p + img {
+    width: 100%;
+    margin-top: 1em;
+  }
+  .section-temporadas div {
+    border: 1px solid rgb(255, 255, 255);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    padding: 1em;
+    -webkit-box-shadow: 6px 9px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 9px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 9px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  .section-temporadas h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  .section-temporadas p {
+    font-family: "Gabarito", cursive;
+    color: #a7a7a7;
+  }
+  .section-personajes p {
+    font-family: "Gabarito", cursive;
+    color: #a7a7a7;
+  }
+  .h2-personajes {
+    margin-top: 1em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 2em;
+    color: rgb(204, 173, 82);
+    font-family: "Skranji", cursive;
+  }
+  .section-temporadas p {
+    text-align: start;
+
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 1em;
+  }
+
+  .section-temporadas div img {
+    margin-bottom: 1em;
+  }
+  .section-temporadas div {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .img-temporadas {
+    width: 80%;
+  }
+  .section-personajes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .flex-personajes {
+    width: 100%;
+  }
+
+  .flip-card {
+    border: 1px solid #a7a7a7;
+    margin-bottom: 1em;
+    margin-top: 1.5em;
+    background-color: transparent;
+    width: 80%;
+    height: 20em;
+    perspective: 1000px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    color: #a7a7a7;
+    background-color: #000000;
+    -webkit-box-shadow: 8px 6px 10px -3px rgba(168, 168, 168, 0.63);
+    -moz-box-shadow: 8px 6px 10px -3px rgba(168, 168, 168, 0.63);
+    box-shadow: 8px 6px 10px -3px rgba(168, 168, 168, 0.63);
+  }
+
+  .profile-image {
+    background-color: transparent;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .img-personajes1 {
+    width: 100%;
+    height: 50%;
+  }
+
+  .pfp {
+    border-radius: 35em;
+    fill: #c7c7c7;
+  }
+
+  .name h2 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: rgb(204, 173, 82);
+    font-weight: bold;
+  }
+
+  .flip-card-back {
+    background-color: #000000;
+    border: 1px solid rgb(204, 173, 82);
+    transform: rotateY(180deg);
+    padding: 11px;
+  }
+  .flex-personajes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .description {
+    margin-top: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: "Gabarito", cursive;
+    color: #a7a7a7;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .div-runas-dioses {
+    width: 80%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  .video-runas {
+    width: 83%;
+    margin-bottom: 3em;
+    border: 1px solid rgb(204, 173, 82);
+  }
+  /*Footer- movile*/
+  .img-footer {
+    width: 6em;
+    padding-bottom: 0.7em;
+  }
+  footer {
+    padding: 1em;
+    border-top: 1px solid rgb(204, 173, 82);
+    text-align: center;
+    background-color: #000000;
+    margin-top: -1em;
+    color: #a7a7a7;
+    font-family: "Gabarito", cursive;
+  }
+  footer section h3 {
+    margin: 1em auto;
+  }
+
+  .img-footer-2 {
+    width: 250px;
+  }
+}
+@media (width > 580px) {
+  /*Header*/
+  header {
+    position: relative;
+    font-family: "Gabarito", cursive;
+    width: 100%;
+    text-align: center;
+    background-color: #333333;
+    opacity: 0.8;
+    color: #a7a7a7;
+  }
+  .div-icon-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 2.7em;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgb(204, 173, 82);
+  }
+  .div-icon-list h2 {
+    font-size: 1.4em;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  svg {
+    display: none;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+  ul li a {
+    display: block;
+    color: #a7a7a7;
+    text-decoration: none;
+    margin: 0 1em;
+  }
+
+  /*Main*/
+  main {
+    background-color: #000000;
+  }
+  .banner {
+    width: 100%;
+  }
+  .section-resumen {
+    width: 35rem;
+    margin-top: 1em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-resumen h2 {
+    margin-bottom: 0.5em;
+    color: rgb(204, 173, 82);
+  }
+  .section-resumen p {
+    color: #a7a7a7;
+    font-family: "Gabarito", cursive;
+  }
+  h2 + p + img {
+    width: 80%;
+    margin-top: 1em;
+  }
+  .section-temporadas div {
+    border: 1px solid #a7a7a7;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    padding: 1em;
+    -webkit-box-shadow: 6px 9px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 9px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 9px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  .section-temporadas p {
+    color: #c7c7c7;
+    font-family: "Gabarito", cursive;
+  }
+  .h2-personajes {
+    margin-top: 1em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 2em;
+    font-family: "Skranji", cursive;
+  }
+  .section-temporadas p {
+    text-align: start;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 1em;
+    color: #c7c7c7;
+  }
+
+  .section-temporadas div img {
+    margin-bottom: 1em;
+  }
+  .section-temporadas div {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .img-temporadas {
+    width: 70%;
+  }
+  .section-personajes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-personajes h2 {
+    color: rgb(204, 173, 82);
+  }
+  .section-temporadas p {
+    text-align: start;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 1em;
+    font-family: "Gabarito", cursive;
+    color: #a7a7a7;
+  }
+  .flex-personajes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .flip-card {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    background-color: transparent;
+    width: 40%;
+    height: 21em;
+    perspective: 1000px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    color: #a7a7a7;
+    border: 1px solid #a7a7a7;
+    background-color: #000000;
+    -webkit-box-shadow: 8px 6px 10px -3px rgba(168, 168, 168, 0.63);
+    -moz-box-shadow: 8px 6px 10px -3px rgba(168, 168, 168, 0.63);
+    box-shadow: 8px 6px 10px -3px rgba(168, 168, 168, 0.63);
+  }
+
+  .profile-image {
+    background-color: transparent;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .img-personajes1 {
+    width: 100%;
+    height: 50%;
+  }
+
+  .pfp {
+    border-radius: 35em;
+    fill: #c7c7c7;
+  }
+
+  .name h2 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: rgb(204, 173, 82);
+    font-weight: bold;
+  }
+
+  .flip-card-back {
+    border: 1px solid rgb(204, 173, 82);
+    background-color: #000000;
+    -webkit-box-shadow: 6px 9px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 9px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 9px 5px 0px rgba(0, 0, 0, 0.75);
+    transform: rotateY(180deg);
+    padding: 11px;
+  }
+
+  .description {
+    margin-top: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: "Gabarito", cursive;
+    color: #a7a7a7;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .div-runas-dioses {
+    width: 80%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  .div-runas-dioses {
+    color: #a7a7a7;
+    font-family: "Gabarito", cursive;
+  }
+  .video-runas {
+    width: 82%;
+    border: 1px solid rgb(204, 173, 82);
+    margin-bottom: 2em;
+  }
+  /*Footer-tablet*/
+  footer {
+    padding: 1em;
+    border-top: 1px solid rgb(204, 173, 82);
+    text-align: center;
+    background-color: #000000;
+
+    color: #a7a7a7;
+    font-family: "Gabarito", cursive;
+  }
+  footer section h3 {
+    margin: 1em auto;
+  }
+
+  .img-footer-2 {
+    width: 250px;
+  }
+  .img-footer {
+    width: 10em;
+    padding: 1em;
+  }
+}
+@media (width > 990px) {
+  /*Header*/
+  header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-family: "Gabarito", cursive;
+    opacity: 0.8;
+  }
+  .div-icon-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 3em;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .div-icon-list h2 {
+    color: #a7a7a7;
+    font-size: 1.4em;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  svg {
+    display: none;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+  ul li a {
+    display: block;
+    color: #a7a7a7;
+    text-decoration: none;
+    margin: 0 1em;
+  }
+
+  /*Main */
+  main {
+    background-color: #000000;
+  }
+  .banner {
+    width: 100%;
+  }
+  .section-resumen {
+    width: 80%;
+    margin-top: 1em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-resumen h2 {
+    margin-bottom: 0.5em;
+  }
+  .section-resumen p {
+    font-family: "Gabarito", cursive;
+    color: #a7a7a7;
+    margin-bottom: 10px;
+  }
+  .resumen-img {
+    width: 80%;
+  }
+  .section-temporadas div {
+    border: 1px solid #a7a7a7;
+    width: 70%;
+    height: 30em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    padding: 1em;
+    background-color: #000000;
+    -webkit-box-shadow: 6px 9px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 9px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 9px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  .section-temporadas h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+  .h2-personajes {
+    margin-top: 1em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 2em;
+    font-family: "Skranji", cursive;
+  }
+  .section-temporadas p {
+    text-align: start;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 1em;
+    font-family: "Gabarito", cursive;
+    color: #a7a7a7;
+  }
+  .section-temporadas div img {
+    margin-bottom: 1em;
+  }
+  .section-temporadas div {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .img-temporadas {
+    width: 50%;
+    margin-top: 4em;
+  }
+  .section-personajes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .flex-personajes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .flip-card {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    background-color: transparent;
+    width: 30%;
+    height: 20em;
+    perspective: 1000px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    background-color: #000000;
+    -webkit-box-shadow: 8px 6px 10px -3px rgba(168, 168, 168, 0.63);
+    -moz-box-shadow: 8px 6px 10px -3px rgba(168, 168, 168, 0.63);
+    box-shadow: 8px 6px 10px -3px rgba(168, 168, 168, 0.63);
+  }
+
+  .profile-image {
+    background-color: transparent;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5em;
+    width: 80%;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .img-personajes1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .pfp {
+    border-radius: 35em;
+    fill: #c7c7c7;
+  }
+
+  .name h2 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: rgb(204, 173, 82);
+    font-weight: bold;
+  }
+
+  .flip-card-back {
+    background-color: #000000;
+    -webkit-box-shadow: 6px 9px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 9px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 9px 5px 0px rgba(0, 0, 0, 0.75);
+    transform: rotateY(180deg);
+    padding: 11px;
+  }
+
+  .description {
+    margin-top: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: "Gabarito", cursive;
+    color: #a7a7a7;
+  }
+
+  .socialbar {
+    background-color: transparent;
+    border-radius: 3em;
+    width: 90%;
+    padding: 14px;
+    margin-top: 11px;
+    margin-left: 10px;
+    word-spacing: 24px;
+    color: white;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .div-runas-dioses {
+    width: 80%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  .video-runas {
+    width: 83%;
+    margin-bottom: 1em;
+  }
+  /*Footer*/
+  footer {
+    padding: 1em;
+    border-top: 1px solid rgb(204, 173, 82);
+    text-align: center;
+    background-color: #000000;
+    margin-top: -1em;
+    color: #a7a7a7;
+    font-family: "Gabarito", cursive;
+  }
+  footer section h3 {
+    margin: 1em auto;
+  }
+
+  .img-footer-2 {
+    width: 250px;
+  }
+  .img-footer {
+    width: 10em;
+    padding: 1em;
+  }
+}
+@media (width > 1400px) {
+  /*Header */
+  header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    opacity: 0.8;
+    font-family: "Gabarito", cursive;
+  }
+  .div-icon-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 4em;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .div-icon-list h2 {
+    color: #a7a7a7;
+    padding: 2em;
+    font-size: 1.4em;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  svg {
+    display: none;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 2em;
+  }
+  ul li a {
+    display: block;
+    color: #a7a7a7;
+    text-decoration: none;
+    margin: 0 1em;
+  }
+
+  /*Main*/
+  main {
+    background-color: #000000;
+  }
+  .banner {
+    width: 80%;
+  }
+  .section-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .section-resumen {
+    width: 80%;
+    margin-top: 1em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-resumen p {
+    font-family: "Gabarito", cursive;
+    color: #a7a7a7;
+    margin-bottom: 1em;
+  }
+  .section-resumen h2 {
+    margin-bottom: 0.5em;
+  }
+  .resumen-img {
+    width: 80%;
+  }
+  .section-temporadas div {
+    border: 1px solid #a7a7a7;
+    width: 50%;
+    height: 30em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    padding: 1em;
+    background-color: #000000;
+    -webkit-box-shadow: 6px 9px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 9px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 9px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  .section-temporadas h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+  .h2-personajes {
+    margin-top: 1em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 2em;
+    font-family: "Skranji", cursive;
+  }
+  .section-temporadas p {
+    text-align: start;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 1em;
+    font-family: "Gabarito", cursive;
+    color: #a7a7a7;
+  }
+
+  .section-temporadas div img {
+    margin-bottom: 1em;
+  }
+  .section-temporadas div {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .img-temporadas {
+    width: 60%;
+    margin-top: 1em;
+  }
+  .section-personajes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .flex-personajes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .flip-card {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    background-color: transparent;
+    width: 30%;
+    height: 25em;
+    perspective: 1000px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    background-color: #000000;
+    -webkit-box-shadow: 8px 6px 10px -3px rgba(168, 168, 168, 0.63);
+    -moz-box-shadow: 8px 6px 10px -3px rgba(168, 168, 168, 0.63);
+    box-shadow: 8px 6px 10px -3px rgba(168, 168, 168, 0.63);
+  }
+
+  .profile-image {
+    background-color: transparent;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5em;
+    width: 80%;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .img-personajes1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .pfp {
+    border-radius: 35em;
+    fill: #c7c7c7;
+  }
+
+  .name h2 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: rgb(204, 173, 82);
+    font-weight: bold;
+  }
+
+  .flip-card-back {
+    background-color: #000000;
+    -webkit-box-shadow: 6px 9px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 9px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 9px 5px 0px rgba(0, 0, 0, 0.75);
+    transform: rotateY(180deg);
+    padding: 11px;
+  }
+
+  .description {
+    font-family: "Gabarito", cursive;
+    margin-top: 10px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: #a7a7a7;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .div-runas-dioses {
+    width: 80%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  .div-runas-dioses p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    font-family: "Gabarito", cursive;
+    color: #a7a7a7;
+  }
+  .video-runas {
+    width: 75%;
+    margin-bottom: 2em;
+  }
+  /*Footer*/
+  footer {
+    padding: 1em;
+    border-top: 1px solid rgb(204, 173, 82);
+    text-align: center;
+    background-color: #000000;
+    margin-top: -1em;
+    color: #a7a7a7;
+    font-family: "Gabarito", cursive;
+  }
+  footer section h3 {
+    margin: 1em auto;
+  }
+  .hr {
+    width: 100%;
+    border: 1px solid #a7a7a7;
+  }
+
+  .img-footer-2 {
+    width: 250px;
+  }
+  .img-footer {
+    width: 10em;
+    padding: 1em;
+    fill: white;
+  }
+}

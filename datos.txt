@@ -1,0 +1,11 @@
+Escuela de Arte Multimedial Da Vinci
+CARRERA: Diseño y Programación Web
+MATERIA: Interacción con Dispositivos Móviles
+TRABAJO PRÁCTICO: Examen Parcial 1
+PROFESOR: D’Addezio Alejandro
+ALUMNO: Miño Nahuel
+CUATRIMESTRE: 2do Cuatrimestre
+COMISIÓN: DWT2AV
+TURNO:Tarde
+FECHA DE ENTREGA: 03/10/2023
+URL DEL SITIO: https://nahuelminio.github.io/DWT2AV-MINO_NAHUEL-PARCIAL_1.github.io/
